@@ -1,3 +1,6 @@
+/*
+*  GoLang 的 helloworld 练习
+*/
 package main
 
 import (
