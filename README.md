@@ -10,4 +10,7 @@ The notes of golang learning.
 **今后会将Go作为主要开发语言（加油）**
 
 ![gopher][1]
+
+
+
 [1]: https://github.com/golang-samples/gopher-vector/blob/master/gopher-side_color.png
