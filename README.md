@@ -7,7 +7,7 @@ The notes of golang learning.
 
 学习暂告一段落
 
-**今后会将Go作为主要开发语言（加油）**
+**今后会将Go作为主要开发语言，加油吧！**
 
 ![gopher][1]
 
