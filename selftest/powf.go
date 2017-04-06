@@ -1,70 +1,59 @@
 /*
 *    二分幂法 求x^n
-*/
+ */
 
-#include <iostream>
-using std::cin;
-using std::cout;
-using std::endl;
+// 求整数幂
+package main
 
-double powerf(double x, unsigned n)
-{
-	double ans = 1.0;
+import (
+	"fmt"
+	"math"
+)
 
-	while (n != 0)
-	{
-		if (n % 2 == 1)
-		{
-			ans *= x ; 
+func main() {
+	var x float64
+	var n int
+	fmt.Scanf("%f%d", &x, &n)
+	fmt.Println(powerf(x, n))
+	fmt.Println(powerf2(x, n))
+	fmt.Println(powerf3(x, n))
+	fmt.Println(math.Pow(x, float64(n)))
+}
+
+func powerf(x float64, n int) float64 {
+	ans := 1.0
+
+	for n != 0 {
+		if n%2 == 1 {
+			ans *= x
 		}
-		x *= x;
-		n /= 2;
+		x *= x
+		n /= 2
 	}
-	return ans;
+	return ans
 }
 
 /*
 *    递归法 求x^n
-*/
-
-double powerf2(double x, unsigned n)
-{
-	double ans = 1.0;
-
-	if (n == 0)
-	{
-		return 1;
-	}
-	else
-	{
-		return x * powerf2(x,n-1);
+ */
+func powerf2(x float64, n int) float64 {
+	if n == 0 {
+		return 1
+	} else {
+		return x * powerf2(x, n-1)
 	}
 }
 
 /*
 *    循环法 求x^n
-*/
+ */
 
-double powerf3(double x, unsigned n)
-{
-	double ans = 1.0;
+func powerf3(x float64, n int) float64 {
+	ans := 1.0
 
-	while (n != 0)
-	{
-		ans *= x;
-		n--;
+	for n != 0 {
+		ans *= x
+		n--
 	}
-	return ans;
-}
-
-int main()
-{
-	
-	double x;
-	unsigned n;
-	cin >> x >> n;
-	cout << x <<"^" << n << " = " << powerf(x,n) << endl;
-	cout << x <<"^" << n << " = " << powerf2(x,n) << endl;
-	cout << x <<"^" << n << " = " << powerf3(x,n) << endl;
-	return 0;
+	return ans
 }
