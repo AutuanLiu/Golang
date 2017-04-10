@@ -1,6 +1,6 @@
 # Golang
 [![Go][2]]() 
-[1]:https://img.shields.io/badge/Go-1.8-brightgreen.svg
+
 The notes of golang learning.
 * code 来源
     - 一些来源于 许式伟 《Go语言编程》
