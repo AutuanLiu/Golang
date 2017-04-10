@@ -1,4 +1,6 @@
 # Golang
+[![Go][2]]() 
+[1]:https://img.shields.io/badge/Go-1.8-brightgreen.svg
 The notes of golang learning.
 * code 来源
     - 一些来源于 许式伟 《Go语言编程》
@@ -14,3 +16,4 @@ The notes of golang learning.
 
 
 [1]: https://github.com/golang-samples/gopher-vector/blob/master/gopher-side_color.png
+[2]:https://img.shields.io/badge/Go-1.8-brightgreen.svg
