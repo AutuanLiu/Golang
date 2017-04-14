@@ -1,0 +1,98 @@
+<link href="https://fonts.gdgdocs.org/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+  
+  .thick-green-border {
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 40%;
+  }
+
+  .cyan-back {
+    background-color: cyan;
+  }
+
+  #cat-photo-form {
+    background-color: green;
+  }
+</style>
+
+<!--
+border-radius: 410px; 
+-->
+
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p><a href="#"><img class="smaller-image thick-green-border" src="./images/relaxing-cat.jpg" alt="A cute orange cat lying on its back。"></a></p>
+
+<p class="red-text">在大家心目中，猫是慵懒的可爱的化身，</p>
+<p class="red-text">它可以睡饱了再起来吃饭，可以逗趣小耗子，可以卖得了萌,</p>
+<p class="red-text">使得了坏，这样百变的小怪兽就集结在一只宠物上，怎能不</p>
+<p class="red-text">惹人怜爱。</p>
+<p class="red-text">养动物有的时候，就是介于爱与恨之间，</p>
+<p class="red-text">当你钦羡别人萌宠这么可爱的时候，你一定没有想过，狗狗和</p>
+<p class="red-text">猫猫会到处拉屎，甚至会屯老鼠，啃鞋子，用爪子爬门，你不</p>
+<p class="red-text">理它，它就挠你，你要对它发脾气，它会比你更来劲。所以，</p>
+<p class="red-text">狗猫慎入，没有一定的准备，切勿随便去侍养动物。它们一旦</p>
+<p class="red-text">认定你了，你就是它们的主人，如果你抛弃它们，它们必定心</p>
+<p class="red-text">中重创。</p>
+
+<div class="cyan-back">
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+</div>
+<!--定义类选择器必须添加 . 为前缀，定义ID选择器必须添加 # 为前缀。-->
+<form action="/submit-cat-photo" id="cat-photo-form">
+  <label>
+   <input type="radio" name="indoor-outdoor" checked=""> 
+    Indoor
+  </label>
+  <label>
+    <input type="radio" name="indoor-outdoor"> 
+    Outdoor
+  <input type="checkbox" name="personality"> 
+  Loving
+  </label>
+  <label>
+  <input type="checkbox" name="personality"> 
+  Hating
+  </label>
+  <label>
+  <input type="checkbox" name="personality" checked=""> 
+  Liking
+  </label>
+  </label>
+    <input type="text" placeholder="cat photo URL" required>
+  <label>
+    <button type="submit">
+    Submit
+  </button>
+</form>
+
+
